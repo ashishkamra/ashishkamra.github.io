@@ -1,7 +1,6 @@
-# openshift-psap.github.io
+# ashishkamra.github.io
 
-Source for the [PSAP team's GitHub Pages site](https://openshift-psap.github.io) — Performance and Scale for AI Platforms.
-
+Source for the Ashish Kamra's github pages site (https://ashishkamra.github.io).
 ## Local development
 
 ```bash
@@ -21,6 +20,5 @@ All content is managed through YAML files in `_data/`. Push to `master` and the 
 | `_data/blog_posts.yml` | Blog posts |
 | `_data/talks.yml` | Conference talks (YouTube URLs are auto-embedded) |
 | `_data/publications.yml` | Academic publications |
-| `_data/upstream_projects.yml` | Upstream open-source projects maintained by the team |
 
 See [CLAUDE.md](CLAUDE.md) for field definitions and examples.
