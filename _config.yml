@@ -1,6 +1,7 @@
 title: PSAP
 description: Performance and Scale for AI Platforms — making Red Hat AI the most performant and scalable enterprise AI platform for Gen AI applications
-url: https://openshift-psap.github.io
+url: https://ashishkamra.github.io
+repository: ashishkamra/ashishkamra.github.io
 github:
   source:
     branch: master
