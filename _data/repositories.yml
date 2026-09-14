@@ -1,3 +1,9 @@
+- name: vllm memory estimator
+  url: https://github.com/openshift-psap/vllm-memory-estimator
+  description: Estimates GPU memory requirements for serving Hugging Face models with vLLM
+  language: Python
+  focus: LLM Performance
+
 - name: gpu-health-check
   url: https://github.com/ashishkamra/gpu-health-check
   description: GPU health-check diagnostics for OpenShift and Kubernetes clusters using NVIDIA GPUs.
