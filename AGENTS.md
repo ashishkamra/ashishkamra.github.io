@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Purpose
 
-This is the GitHub Pages site for the [PSAP](https://github.com/openshift-psap) team (Performance and Scale for AI Platforms). Served at `https://openshift-psap.github.io`. Built with Jekyll; GitHub auto-deploys on push to `master`.
+This is Ashish Kamra's public profile, served at `https://ashishkamra.github.io`. It is built with Jekyll and GitHub Actions deploys pushes to `master`.
 
 ## Local Development
 
@@ -14,19 +14,19 @@ bundle exec jekyll serve
 # Visit http://localhost:4000
 ```
 
-Set `JEKYLL_GITHUB_TOKEN` to a GitHub personal access token to populate the Projects section locally (it uses the GitHub Metadata API). Without it, that section will be empty locally but works on GitHub Pages automatically.
+Set `JEKYLL_GITHUB_TOKEN` to a GitHub personal access token if required by the GitHub Metadata plugin during local builds.
 
 ## Architecture
 
 Static Jekyll site with no theme — all HTML/CSS is custom. Structure:
 
 - `_layouts/default.html` — single base layout used by all pages
-- `_includes/*.html` — one partial per section (projects, blog_posts, talks, conferences, upstream_projects)
+- `_includes/*.html` — one partial per profile section
 - `_data/*.yml` — maintainer-edited content files (see below)
-- `assets/css/style.css` — all styles; uses CSS variables for Red Hat brand colors (`--red: #EE0000`)
+- `assets/css/style.css` — all site styles and responsive behavior
 - `index.md` — home page; just pulls in all the includes in order
 
-The Projects section (`_includes/projects.html`) is fully dynamic: it iterates `site.github.public_repositories` via the `jekyll-github-metadata` plugin, skipping archived and forked repos.
+The selected repositories and patents are maintained in `_data/repositories.yml` and `_data/patents.yml`.
 
 ## Adding Content
 
@@ -50,22 +50,11 @@ YouTube URLs are auto-detected and embedded; all other URLs render as linked car
   date: "2025-11-11"
 ```
 
-### `_data/conferences.yml`
-```yaml
-- name: "Conference Name"
-  url: https://conference-url
-  location: "City, Country"
-  date: "2025-11-11"
-  talks:                   # optional
-    - "Talk A"
-    - "Talk B"
-```
-
-### `_data/upstream_projects.yml`
+### `_data/repositories.yml`
 ```yaml
 - name: "ProjectName"
   url: https://github.com/org/repo
-  org: "org-name"
   description: "One sentence."
-  role: "Contributor"      # or Maintainer, Co-creator, etc.
+  language: "Python"
+  focus: "Applied AI"
 ```

@@ -1,0 +1,21 @@
+<section class="section patents-section" id="patents">
+  <div class="container patents-layout">
+    <div class="patents-intro">
+      <p class="section-kicker">03 / Patents</p>
+      <h2>From systems thinking to protected invention.</h2>
+      <p>Five U.S. patents and applications spanning workload orchestration, dynamic compute allocation, virtualization, and enterprise storage.</p>
+      <a class="text-link" href="https://patents.justia.com/inventor/ashish-kamra" target="_blank" rel="noopener">View inventor profile <span aria-hidden="true">↗</span></a>
+    </div>
+    <ol class="patent-list">
+      {% for patent in site.data.patents %}
+      <li>
+        <a href="{{ patent.url }}" target="_blank" rel="noopener">
+          <span class="patent-year">{{ patent.year }}</span>
+          <span class="patent-main"><strong>{{ patent.title }}</strong><small>{{ patent.number }} · {{ patent.assignee }} · {{ patent.status }}</small></span>
+          <span class="patent-arrow" aria-hidden="true">↗</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

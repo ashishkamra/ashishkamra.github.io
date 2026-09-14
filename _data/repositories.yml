@@ -1,0 +1,35 @@
+- name: gpu-health-check
+  url: https://github.com/ashishkamra/gpu-health-check
+  description: GPU health-check diagnostics for OpenShift and Kubernetes clusters using NVIDIA GPUs.
+  language: Shell
+  focus: AI infrastructure
+
+- name: agentic-coding-bakeoff
+  url: https://github.com/ashishkamra/agentic-coding-bakeoff
+  description: Dataset generation for comparing vLLM and SGLang on coding-agent inference workloads.
+  language: Python
+  focus: LLM performance
+
+- name: tokens-to-cost
+  url: https://github.com/ashishkamra/tokens-to-cost
+  description: A command-line tool and web interface for translating AI token usage into cost.
+  language: Python
+  focus: Developer tools
+
+- name: AI_usage_analysis
+  url: https://github.com/ashishkamra/AI_usage_analysis
+  description: Survey analysis with emotion-focused semantic categorization and interactive visualizations.
+  language: Python
+  focus: Applied AI
+
+- name: github-pr-releases
+  url: https://github.com/ashishkamra/github-pr-releases
+  description: A focused utility for finding which GitHub release contains a specific pull request.
+  language: Shell
+  focus: Developer tools
+
+- name: nbc
+  url: https://github.com/ashishkamra/nbc
+  description: Naive Bayes Classifier source from the ID-RBAC research presented at ACSAC 2005.
+  language: C
+  focus: Security research
