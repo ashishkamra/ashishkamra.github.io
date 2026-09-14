@@ -1,29 +1,11 @@
 # Conference talks by Ashish Kamra and collaborators.
 # Fields: title, url (any — YouTube videos are auto-embedded), speakers, event, date (YYYY-MM-DD)
 
-- title: "GuideLLM v0.7.0+: Benchmarking Reasoning, Tool Calling, and Agentic Traces"
-  url: "https://www.youtube.com/watch?v=dQAByb7N5QQ&t=2013"
-  speakers: "Samuel Monson (Red Hat), Jared O'Connell (Red Hat)"
-  event: "vLLM Office Hours #56"
-  date: "2026-09-20"
-
 - title: "KV Cache-Aware Routing and P/D Disaggregation on Kubernetes"
   url: "https://www.youtube.com/watch?v=YXowceUKYJI"
   speakers: "Yuchen Fama & Ashish Kamra (Red Hat)"
   event: "AI Engineer World's Fair 2026"
   date: "2026-07-02"
-
-- title: "A Cross-Industry Benchmarking Tutorial for Distributed LLM Inference on Kubernetes"
-  url: https://www.youtube.com/watch?v=RVQwP-apF-A
-  speakers: "Samuel Monson (Red Hat), Ganesh Kudleppanavar (NVIDIA), Jason Kramberger (Google), Jing Chen (IBM Research)"
-  event: "KubeCon + CloudNativeCon Europe 2026"
-  date: "2026-03-24"
-
-- title: "Routing Stateful AI Workloads in Kubernetes"
-  url: https://www.youtube.com/watch?v=-C76naL3PRc
-  speakers: "Maroon Ayoub (IBM Research), Michey Mehta (Red Hat)"
-  event: "KubeCon + CloudNativeCon North America 2025"
-  date: "2025-11-11"
 
 - title: "Learn How to Run an LLM Inference Performance Benchmark on NVIDIA GPUs"
   url: https://www.youtube.com/watch?v=otCouSz64Z8
@@ -36,15 +18,3 @@
   speakers: "Ashish Kamra (Red Hat), Boaz Ben Shabat (Red Hat)"
   event: "KubeCon + CloudNativeCon India 2024"
   date: "2024-12-11"
-
-- title: "Optimizing Load Balancing and Autoscaling for Large Language Model (LLM) Inference on Kubernetes"
-  url: https://www.youtube.com/watch?v=TSEGAh1bs4A
-  speakers: "David Gray (Red Hat)"
-  event: "KubeCon + CloudNativeCon North America 2024"
-  date: "2024-11-13"
-
-- title: "Efficiently Deploying and Benchmarking LLMs in Kubernetes"
-  url: https://www.youtube.com/watch?v=ij9gPk8ChQ8
-  speakers: "Nikhil Palaskar (Red Hat)"
-  event: "DevConf.US 2024"
-  date: "2024-08-14"
