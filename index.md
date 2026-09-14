@@ -7,8 +7,8 @@ title: Ashish Kamra | AI & Cloud Engineering Leader
   <div class="container hero-grid">
     <div class="hero-copy">
       <p class="eyebrow">AI performance · Cloud platforms · Engineering leadership</p>
-      <h1>Building systems<br>that perform <em>at scale.</em></h1>
-      <p class="hero-intro">I'm Ashish Kamra, Senior Manager of AI Performance at Red Hat. I lead engineering teams working to make enterprise AI and cloud platforms faster, more scalable, and more useful in the real world.</p>
+      <h1>Building Enterprise AI platforms<br>that perform <em>at scale.</em></h1>
+      <p class="hero-intro">I am Ashish Kamra, Senior Manager of AI Performance at Red Hat. I lead engineering teams working to make enterprise AI and cloud platforms faster, more scalable, and more useful in the real world.</p>
       <div class="hero-actions">
         <a class="button button-primary" href="#repositories">Explore my work</a>
         <a class="button button-secondary" href="https://www.linkedin.com/in/ashishkamra/" target="_blank" rel="noopener">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
@@ -18,7 +18,7 @@ title: Ashish Kamra | AI & Cloud Engineering Leader
       <div class="portrait-frame">
         <img src="https://www.redhat.com/rhdc/managed-files/styles/large/private/unnamed%20-%20Ashish%20Kamra.jpg.webp?itok=_i0Q9XYr" alt="Ashish Kamra" width="520" height="520">
       </div>
-      <div class="portrait-note"><span>Based in</span> Arlington, Massachusetts</div>
+      <div class="portrait-note"><span>Based in</span> Greater Boston, Massachusetts</div>
     </div>
   </div>
 </section>
@@ -31,7 +31,7 @@ title: Ashish Kamra | AI & Cloud Engineering Leader
     </div>
     <div class="bio-copy">
       <p class="lead">For more than 15 years, I have built and led high-performing teams across artificial intelligence, machine learning, cloud computing, and enterprise storage.</p>
-      <p>At Red Hat, I lead initiatives focused on the performance and scale of Red Hat OpenShift AI, with an emphasis on large language model inference and training. Previously, I held engineering leadership roles at Dell EMC, developing enterprise and cloud storage solutions.</p>
+      <p>At Red Hat, I lead initiatives focused on the performance and scale of Red Hat AI, with an emphasis on Agentic AI Platform performance and LLM inference on Kubernetes. Previously, I held engineering leadership roles at Dell EMC, developing enterprise and cloud storage solutions.</p>
       <p>My foundation is in research: I earned a Ph.D. in Computer Engineering from Purdue University, where my work focused on database intrusion detection and response. I continue to bridge research and production through open source, patents, publications, and technical talks.</p>
       <div class="expertise-list" aria-label="Areas of expertise">
         <span>AI inference</span><span>Performance engineering</span><span>OpenShift</span><span>Cloud platforms</span><span>Technical leadership</span>
