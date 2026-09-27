@@ -4,42 +4,17 @@
       <h2>Talks</h2>
       <span class="count">{{ site.data.talks | size }}</span>
     </div>
-    <div class="card-grid">
+    <ul class="compact-collection">
       {% assign talks = site.data.talks | sort: "date" | reverse %}
       {% for talk in talks %}
-        <div class="card talk-card">
-          {% assign is_youtube = false %}
-          {% if talk.url contains "youtube.com/watch" %}
-            {% assign is_youtube = true %}
-            {% assign video_id = talk.url | split: "v=" | last | split: "&" | first %}
-          {% elsif talk.url contains "youtu.be/" %}
-            {% assign is_youtube = true %}
-            {% assign video_id = talk.url | split: "youtu.be/" | last | split: "?" | first %}
-          {% endif %}
-
-          {% if is_youtube %}
-            <div class="talk-embed">
-              <iframe
-                src="https://www.youtube-nocookie.com/embed/{{ video_id }}"
-                title="{{ talk.title }}"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-              </iframe>
-            </div>
-          {% endif %}
-
-          <h3>
-            <a href="{{ talk.url }}" target="_blank" rel="noopener">{{ talk.title }}</a>
-          </h3>
-          {% if talk.speakers %}
-            <p>{{ talk.speakers }}</p>
-          {% endif %}
-          <div class="card-meta">
-            {% if talk.event %}<span class="badge">{{ talk.event }}</span>{% endif %}
-            {% if talk.date %}<span>{{ talk.date | date: "%B %-d, %Y" }}</span>{% endif %}
+        <li class="compact-row">
+          <div>
+            <h3><a href="{{ talk.url }}" target="_blank" rel="noopener">{{ talk.title }} <span aria-hidden="true">↗</span></a></h3>
+            <p>{% if talk.event %}{{ talk.event }}{% endif %}{% if talk.event and talk.speakers %} · {% endif %}{% if talk.speakers %}{{ talk.speakers }}{% endif %}</p>
           </div>
-        </div>
+          {% if talk.date %}<time class="compact-row-meta" datetime="{{ talk.date }}">{{ talk.date | date: "%b %-d, %Y" }}</time>{% endif %}
+        </li>
       {% endfor %}
-    </div>
+    </ul>
   </div>
 </section>

@@ -56,7 +56,7 @@ button { font: inherit; }
 .site-nav .nav-linkedin { padding: 0.62rem 0.9rem; background: var(--blue); color: var(--white); border: 0; }
 .site-nav .nav-linkedin:hover { background: var(--blue-dark); }
 
-.hero { overflow: hidden; padding: 6.5rem 0 5.5rem; border-bottom: 1px solid var(--ink); }
+.hero { overflow: hidden; padding: 4.5rem 0 4rem; border-bottom: 1px solid var(--ink); }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr); align-items: center; gap: clamp(3rem, 8vw, 8rem); }
 .eyebrow, .section-kicker { margin-bottom: 1.2rem; color: var(--blue); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; }
 .hero h1 {
@@ -68,8 +68,8 @@ button { font: inherit; }
   line-height: 0.92;
 }
 .hero h1 em { color: var(--blue); font-weight: 400; }
-.hero-intro { max-width: 690px; margin-top: 2.2rem; color: var(--ink-soft); font-size: clamp(1.05rem, 1.6vw, 1.3rem); line-height: 1.55; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 2rem; }
+.hero-intro { max-width: 690px; margin-top: 1.6rem; color: var(--ink-soft); font-size: clamp(1.05rem, 1.6vw, 1.3rem); line-height: 1.55; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.5rem; }
 .button {
   display: inline-flex;
   align-items: center;
@@ -97,31 +97,31 @@ button { font: inherit; }
 .portrait-note { position: absolute; right: -1rem; bottom: -1.6rem; padding: 0.8rem 1rem; background: var(--lime); font-size: 0.78rem; font-weight: 700; }
 .portrait-note span { display: block; font-size: 0.61rem; letter-spacing: 0.12em; text-transform: uppercase; }
 
-.section { padding: clamp(4.5rem, 8vw, 7.5rem) 0; border-bottom: 1px solid var(--ink); }
+.section { padding: clamp(3rem, 5vw, 4.75rem) 0; border-bottom: 1px solid var(--ink); }
 .bio-section { background: var(--ink); color: var(--white); }
 .bio-grid { display: grid; grid-template-columns: 0.75fr 1.25fr; gap: clamp(3rem, 8vw, 8rem); }
 .display-heading { font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.8rem, 5vw, 5rem); font-weight: 400; letter-spacing: -0.05em; line-height: 1; }
 .bio-copy { max-width: 720px; }
 .bio-copy p { margin-bottom: 1.2rem; color: #bfc5ca; }
 .bio-copy .lead { color: var(--white); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.5rem, 2.4vw, 2.1rem); line-height: 1.35; }
-.expertise-list { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 2rem; }
+.expertise-list { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1.5rem; }
 .expertise-list span { padding: 0.45rem 0.75rem; border: 1px solid #66717a; border-radius: 2rem; color: var(--white); font-size: 0.74rem; }
 
-.section-title-row { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 3.2rem; }
+.section-title-row { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 2.25rem; }
 .section-title-row h2, .patents-intro h2, .connect-card h2 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.6rem, 4.7vw, 4.5rem); font-weight: 400; letter-spacing: -0.05em; line-height: 1.05; }
 .text-link { display: inline-block; padding-bottom: 0.18rem; border-bottom: 1px solid currentColor; color: var(--blue); font-size: 0.82rem; font-weight: 700; white-space: nowrap; }
 .text-link:hover { color: var(--blue-dark); }
 .repo-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); }
-.repo-card { display: grid; grid-template-columns: 48px 1fr; gap: 1rem; min-height: 250px; padding: 2rem; border-bottom: 1px solid var(--line); transition: 180ms ease; }
+.repo-card { display: grid; grid-template-columns: 40px 1fr; gap: 0.8rem; padding: 1.5rem; border-bottom: 1px solid var(--line); transition: 180ms ease; }
 .repo-card:nth-child(odd) { border-right: 1px solid var(--line); }
 .repo-card:hover { background: var(--white); }
 .repo-card:hover h3 { color: var(--blue); }
 .repo-number { color: #8f928e; font-family: Georgia, serif; font-size: 0.85rem; }
 .repo-focus { color: var(--blue); font-size: 0.67rem; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; }
-.repo-card h3 { margin: 0.7rem 0 0.65rem; font-family: Georgia, serif; font-size: clamp(1.45rem, 2.2vw, 2rem); font-weight: 400; letter-spacing: -0.025em; line-height: 1.1; transition: 180ms ease; }
+.repo-card h3 { margin: 0.5rem 0; font-family: Georgia, serif; font-size: clamp(1.4rem, 2vw, 1.8rem); font-weight: 400; letter-spacing: -0.025em; line-height: 1.1; transition: 180ms ease; }
 .repo-card h3 span { font-family: Arial, sans-serif; font-size: 0.8rem; }
 .repo-card .repo-content > p:not(.repo-focus) { color: var(--ink-soft); font-size: 0.9rem; }
-.repo-language { display: flex; align-items: center; gap: 0.45rem; margin-top: 1.2rem; color: var(--ink-soft); font-size: 0.7rem; font-weight: 700; }
+.repo-language { display: flex; align-items: center; gap: 0.45rem; margin-top: 0.8rem; color: var(--ink-soft); font-size: 0.7rem; font-weight: 700; }
 .repo-language i { width: 8px; height: 8px; border-radius: 50%; background: var(--blue); }
 
 .patents-section { background: var(--blue); color: var(--white); }
@@ -154,7 +154,7 @@ button { font: inherit; }
 .resume-links > span { font-family: Georgia, serif; font-size: 1.15rem; }
 
 /* Existing writing, talks, and publication collections */
-.section-header { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 2.5rem; }
+.section-header { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.75rem; }
 .section-header h2 { font-family: Georgia, serif; font-size: clamp(2.3rem, 4vw, 3.7rem); font-weight: 400; letter-spacing: -0.04em; }
 .section-header .count { display: grid; width: 30px; height: 30px; place-items: center; border-radius: 50%; background: var(--lime); font-size: 0.68rem; font-weight: 800; }
 #blog, #publications { background: var(--paper); }
@@ -169,17 +169,27 @@ button { font: inherit; }
 .blog-show-more-btn { display: block; margin: 2rem auto 0; padding: 0.7rem 1.4rem; border: 1px solid var(--ink); background: transparent; cursor: pointer; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; }
 .blog-show-more-btn:hover { background: var(--ink); color: var(--white); }
 .card-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
-.card { display: flex; flex-direction: column; gap: 0.7rem; min-width: 0; padding: 1.6rem; background: var(--paper-light); }
+.card { display: flex; flex-direction: column; gap: 0.7rem; min-width: 0; padding: 1.35rem; background: var(--paper-light); }
 .card h3 { font-family: Georgia, serif; font-size: 1.3rem; font-weight: 400; line-height: 1.25; }
 .card h3 a:hover { color: var(--blue); }
 .card p, .card-meta { color: var(--ink-soft); font-size: 0.78rem; }
 .card-meta { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .badge { padding: 0.15rem 0.5rem; border-radius: 1rem; background: #e7e4db; font-size: 0.66rem; font-weight: 700; }
-.talk-embed { position: relative; width: 100%; padding-top: 56.25%; margin-bottom: 0.7rem; overflow: hidden; background: var(--ink); }
-.talk-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.compact-collection { list-style: none; border-top: 1px solid var(--line); }
+.compact-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.5rem; padding: 0.9rem 0; border-bottom: 1px solid var(--line); }
+.compact-row h3 { font-family: Georgia, serif; font-size: 1.12rem; font-weight: 400; line-height: 1.25; }
+.compact-row h3 a:hover { color: var(--blue); }
+.compact-row p { margin-top: 0.25rem; color: var(--ink-soft); font-size: 0.74rem; line-height: 1.45; }
+.compact-row-meta { color: var(--ink-soft); font-size: 0.7rem; font-weight: 700; white-space: nowrap; }
+.collection-year { margin: 1.4rem 0 0.55rem; color: var(--blue); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; }
+.collection-show-more { display: none; margin: 1.5rem auto 0; padding: 0.65rem 1.2rem; border: 1px solid var(--ink); background: transparent; cursor: pointer; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
+.js .collection-show-more { display: block; }
+.collection-show-more[hidden] { display: none; }
+.collection-show-more:hover { background: var(--ink); color: var(--white); }
+.js .collection-item-hidden { display: none; }
 
 .connect-section { padding-bottom: 0; background: var(--ink); color: var(--white); border: 0; }
-.connect-card { padding-bottom: clamp(4.5rem, 8vw, 7rem); text-align: center; }
+.connect-card { padding-bottom: clamp(3rem, 5vw, 4.75rem); text-align: center; }
 .connect-card .section-kicker { color: var(--lime); }
 .connect-card p:not(.section-kicker) { margin-top: 1rem; color: #bfc5ca; }
 .connect-card .hero-actions { justify-content: center; }
@@ -192,7 +202,7 @@ button { font: inherit; }
 @media (max-width: 900px) {
   .site-nav { gap: 1rem; }
   .site-nav a:not(.nav-linkedin) { display: none; }
-  .hero { padding-top: 4rem; }
+  .hero { padding-top: 3.5rem; }
   .hero-grid { grid-template-columns: 1fr 240px; gap: 2.5rem; }
   .hero h1 { font-size: clamp(3.3rem, 8.5vw, 5.5rem); }
   .bio-grid, .patents-layout { grid-template-columns: 1fr; }
@@ -207,11 +217,11 @@ button { font: inherit; }
   .brand-mark { width: 36px; height: 36px; }
   .site-brand small { display: none; }
   .site-nav .nav-linkedin { padding: 0.5rem 0.65rem; font-size: 0.66rem; }
-  .hero { padding: 3.5rem 0 4.5rem; }
+  .hero { padding: 2.75rem 0 3.25rem; }
   .hero-grid { display: flex; flex-direction: column; align-items: stretch; }
   .hero h1 { font-size: clamp(3.15rem, 15vw, 4.6rem); }
   .portrait-wrap { width: min(82%, 330px); margin: 1rem auto 0; }
-  .section { padding: 4.5rem 0; }
+  .section { padding: 3rem 0; }
   .repo-grid, .resume-grid, .card-grid { grid-template-columns: 1fr; }
   .repo-card:nth-child(odd) { border-right: 0; }
   .repo-card { min-height: 0; padding: 1.5rem 0; }
@@ -220,6 +230,7 @@ button { font: inherit; }
   .patent-main strong { font-size: 1.05rem; }
   .resume-links, .footer-content { align-items: flex-start; flex-direction: column; }
   .blog-compact-item { flex-direction: column; gap: 0.25rem; }
+  .compact-row { grid-template-columns: 1fr; gap: 0.35rem; }
 }
 
 @media print {

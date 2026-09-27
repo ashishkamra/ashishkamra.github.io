@@ -4,20 +4,58 @@
       <h2>Publications</h2>
       <span class="count">{{ site.data.publications | size }}</span>
     </div>
-    <div class="card-grid">
-      {% assign pubs = site.data.publications | sort: "year" | reverse %}
-      {% for pub in pubs %}
-        <div class="card">
+    <div id="publication-list">
+    {% assign pubs = site.data.publications | sort: "year" | reverse %}
+    {% assign current_year = "" %}
+    {% for pub in pubs %}
+      {% assign publication_year = pub.year | default: "Undated" %}
+      {% if publication_year != current_year %}
+        {% unless forloop.first %}</ul>{% endunless %}
+        <h3 class="collection-year{% if forloop.index > 8 %} collection-item-hidden{% endif %}" data-publication-index="{{ forloop.index }}">{{ publication_year }}</h3>
+        <ul class="compact-collection{% if forloop.index > 8 %} collection-item-hidden{% endif %}" data-publication-index="{{ forloop.index }}">
+        {% assign current_year = publication_year %}
+      {% endif %}
+      <li class="compact-row{% if forloop.index > 8 %} collection-item-hidden{% endif %}" data-publication-index="{{ forloop.index }}">
+        <div>
           <h3><a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a></h3>
-          {% if pub.abstract %}<p>{{ pub.abstract }}</p>{% endif %}
-          <div class="card-meta">
-            <span>{{ pub.venue }}</span>
-          </div>
-          <div class="card-meta">
-            <span>{{ pub.authors }}</span>
-          </div>
+          <p>{{ pub.venue }} · {{ pub.authors }}</p>
         </div>
-      {% endfor %}
+        <a class="compact-row-meta" href="{{ pub.url }}" target="_blank" rel="noopener" aria-label="View {{ pub.title | escape }}">View <span aria-hidden="true">↗</span></a>
+      </li>
+      {% if forloop.last %}</ul>{% endif %}
+    {% endfor %}
     </div>
+    {% if site.data.publications.size > 8 %}
+      <button class="collection-show-more" id="publication-show-more" type="button" aria-controls="publication-list" aria-expanded="false">Show 8 more publications</button>
+    {% endif %}
   </div>
 </section>
+
+<script>
+(function () {
+  var button = document.getElementById('publication-show-more');
+  if (!button) return;
+
+  var chunkSize = 8;
+  var visibleCount = chunkSize;
+  var items = document.querySelectorAll('[data-publication-index]');
+  var total = {{ site.data.publications | size }};
+
+  button.addEventListener('click', function () {
+    visibleCount += chunkSize;
+    button.setAttribute('aria-expanded', 'true');
+    items.forEach(function (item) {
+      if (parseInt(item.dataset.publicationIndex, 10) <= visibleCount) {
+        item.classList.remove('collection-item-hidden');
+      }
+    });
+
+    var remaining = total - visibleCount;
+    if (remaining <= 0) {
+      button.hidden = true;
+    } else {
+      button.textContent = 'Show ' + Math.min(chunkSize, remaining) + ' more publications';
+    }
+  });
+})();
+</script>
