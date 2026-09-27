@@ -1,5 +1,6 @@
 # Academic publications by Ashish Kamra.
 # Fields: title, url, authors, venue, year, doi, abstract (optional one-sentence summary)
+# Scholar profile: https://scholar.google.com/citations?user=Fn_hlBoAAAAJ&hl=en
 
 - title: "llm-tuna: Hyperparameter Optimization for LLM Inference"
   url: https://dl.acm.org/doi/10.1145/3774904.3792953
@@ -8,3 +9,122 @@
   year: 2026
   doi: "10.1145/3774904.3792953"
   abstract: "An open-source framework that automates vLLM inference hyperparameter optimization using Bayesian search via Optuna, achieving up to 32.9% throughput improvement on mixture-of-experts models."
+
+- title: "PostgreSQL anomalous query detector"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:Y0pCki6q_DkC
+  authors: "B. Shebaro, A. Sallam, A. Kamra, E. Bertino"
+  venue: "Proceedings of the 16th International Conference on Extending Database Technology, 741-744"
+  year: 2013
+
+- title: "Access control for databases: Concepts and systems"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:IjCSPb-OGe4C
+  authors: "E. Bertino, G. Ghinita, A. Kamra"
+  venue: "Foundations and Trends in Databases 3 (1-2), 1-148"
+  year: 2011
+
+- title: "Design and implementation of an intrusion response system for relational databases"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:2osOgNQ5qMEC
+  authors: "A. Kamra, E. Bertino"
+  venue: "IEEE Transactions on Knowledge and Data Engineering 23 (6), 875-888"
+  year: 2010
+
+- title: "Privilege states based access control for fine-grained intrusion response"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:W7OEmFMy1HYC
+  authors: "A. Kamra, E. Bertino"
+  venue: "International Workshop on Recent Advances in Intrusion Detection, 402-421"
+  year: 2010
+
+- title: "Mechanisms for database intrusion detection and response"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:WF5omc3nYNoC
+  authors: "A. Kamra"
+  venue: "Purdue University (PhD thesis)"
+  year: 2010
+
+- title: "JTAM-A Joint Threshold Administration Model"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:Se3iqnhoufwC
+  authors: "A. Kamra, E. Bertino"
+  venue: "2010 IEEE International Symposium on Policies for Distributed Systems and Networks, 129-132"
+  year: 2010
+
+- title: "PSAC: privilege state-based access control"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:ufrVoPGSRksC
+  authors: "A. Kamra, E. Bertino"
+  venue: "Proceedings of the 11th Annual Information Security Symposium"
+  year: 2010
+
+- title: "Survey of machine learning methods for database security"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:eQOLeE2rZwMC
+  authors: "A. Kamra, E. Ber"
+  venue: "Machine Learning in Cyber Trust: Security, Privacy, and Reliability, 53-71"
+  year: 2009
+
+- title: "Design and Implementation of SAACS: A State-Aware Access Control System"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:Tyk-4Ss8FVUC
+  authors: "A. Kamra, E. Bertino"
+  venue: "Annual Computer Security Applications Conference (ACSAC)"
+  year: 2009
+
+- title: "Security in the cloud panel: symposium summary"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:roLk4NBRz8UC
+  authors: "A. Kamra"
+  venue: "Proceedings of the 10th Annual Information Security Symposium"
+  year: 2009
+
+- title: "Detecting anomalous access patterns in relational databases"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:u-x6o8ySG0sC
+  authors: "A. Kamra, E. Terzi, E. Bertino"
+  venue: "The VLDB Journal 17 (5), 1063-1077"
+  year: 2008
+
+- title: "Mechanisms for database intrusion detection and response"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:qjMakFHDy7sC
+  authors: "A. Kamra, E. Bertino, G. Lebanon"
+  venue: "Proceedings of the 2nd SIGMOD PhD Workshop on Innovative Database Research, 31-36"
+  year: 2008
+
+- title: "Responding to anomalous database requests"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:zYLM7Y9cAGgC
+  authors: "A. Kamra, E. Bertino, R. Nehme"
+  venue: "Workshop on Secure Data Management, 50-66"
+  year: 2008
+
+- title: "Database Intrusion Detection and Response"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:_FxGoFyzp5QC
+  authors: "A. Kamra, E. Bertino"
+  venue: "International Workshop on Recent Advances in Intrusion Detection, 400-401"
+  year: 2008
+
+- title: "Efficient k-Anonymization Using Clustering Techniques"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:u5HHmVD_uO8C
+  authors: "J.-W. Byun, A. Kamra, E. Bertino, N. Li"
+  venue: "International Conference on Database Systems for Advanced Applications, 188-200"
+  year: 2007
+
+- title: "Profiling database application to detect SQL injection attacks"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:9yKSN-GCB0IC
+  authors: "E. Bertino, A. Kamra, J. P. Early"
+  venue: "2007 IEEE International Performance, Computing, and Communications Conference, 449-458"
+  year: 2007
+
+- title: "Database security"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:YsMSGLbcyi4C
+  authors: "E. Bertino, J.-W. Byun, A. Kamra"
+  venue: "Security, Privacy, and Trust in Modern Data Management, 87-101"
+  year: 2007
+
+- title: "Intrusion detection in RBAC-administered databases"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:d1gkVwhDpl0C
+  authors: "E. Bertino, E. Terzi, A. Kamra, A. Vakali"
+  venue: "21st Annual Computer Security Applications Conference (ACSAC)"
+  year: 2005
+
+- title: "Viwid: Visible watermarking based defense against phishing"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:UeHWp8X0CEIC
+  authors: "M. Topkara, A. Kamra, M. J. Atallah, C. Nita-Rotaru"
+  venue: "International Workshop on Digital Watermarking, 470-483"
+  year: 2005
+
+- title: "DATABASE SEMINAR REPORT"
+  url: https://scholar.google.com/citations?view_op=view_citation&user=Fn_hlBoAAAAJ&citation_for_view=Fn_hlBoAAAAJ:0EnyYjriUFMC
+  authors: "A. Kamra, E. Terzi, E. Bertino"
+  venue: "Seminar report"
