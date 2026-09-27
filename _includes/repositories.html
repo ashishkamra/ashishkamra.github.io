@@ -7,9 +7,9 @@
       </div>
       <a class="text-link" href="https://github.com/ashishkamra?tab=repositories" target="_blank" rel="noopener">View all on GitHub <span aria-hidden="true">↗</span></a>
     </div>
-    <div class="repo-grid">
+    <div class="repo-grid" id="repository-list">
       {% for repo in site.data.repositories %}
-      <a class="repo-card" href="{{ repo.url }}" target="_blank" rel="noopener">
+      <a class="repo-card{% if forloop.index > 4 %} collection-item-hidden{% endif %}" href="{{ repo.url }}" target="_blank" rel="noopener">
         <div class="repo-number">0{{ forloop.index }}</div>
         <div class="repo-content">
           <p class="repo-focus">{{ repo.focus }}</p>
@@ -20,5 +20,26 @@
       </a>
       {% endfor %}
     </div>
+    {% if site.data.repositories.size > 4 %}
+      <button class="collection-show-more" id="repository-show-more" type="button" aria-controls="repository-list" aria-expanded="false">Show all {{ site.data.repositories | size }} repositories</button>
+    {% endif %}
   </div>
 </section>
+
+<script>
+(function () {
+  var button = document.getElementById('repository-show-more');
+  if (!button) return;
+  var extra = document.querySelectorAll('#repository-list .collection-item-hidden');
+  var expanded = false;
+
+  button.addEventListener('click', function () {
+    expanded = !expanded;
+    extra.forEach(function (item) {
+      item.classList.toggle('collection-item-hidden', !expanded);
+    });
+    button.setAttribute('aria-expanded', String(expanded));
+    button.textContent = expanded ? 'Show fewer repositories' : 'Show all {{ site.data.repositories | size }} repositories';
+  });
+})();
+</script>

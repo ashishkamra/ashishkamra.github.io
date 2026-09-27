@@ -11,22 +11,21 @@
       {% assign publication_year = pub.year | default: "Undated" %}
       {% if publication_year != current_year %}
         {% unless forloop.first %}</ul>{% endunless %}
-        <h3 class="collection-year{% if forloop.index > 8 %} collection-item-hidden{% endif %}" data-publication-index="{{ forloop.index }}">{{ publication_year }}</h3>
-        <ul class="compact-collection{% if forloop.index > 8 %} collection-item-hidden{% endif %}" data-publication-index="{{ forloop.index }}">
+        <h3 class="collection-year{% if forloop.index > 4 %} collection-item-hidden{% endif %}">{{ publication_year }}</h3>
+        <ul class="compact-collection{% if forloop.index > 4 %} collection-item-hidden{% endif %}">
         {% assign current_year = publication_year %}
       {% endif %}
-      <li class="compact-row{% if forloop.index > 8 %} collection-item-hidden{% endif %}" data-publication-index="{{ forloop.index }}">
+      <li class="compact-row{% if forloop.index > 4 %} collection-item-hidden{% endif %}">
         <div>
           <h3><a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a></h3>
           <p>{{ pub.venue }} · {{ pub.authors }}</p>
         </div>
-        <a class="compact-row-meta" href="{{ pub.url }}" target="_blank" rel="noopener" aria-label="View {{ pub.title | escape }}">View <span aria-hidden="true">↗</span></a>
       </li>
       {% if forloop.last %}</ul>{% endif %}
     {% endfor %}
     </div>
-    {% if site.data.publications.size > 8 %}
-      <button class="collection-show-more" id="publication-show-more" type="button" aria-controls="publication-list" aria-expanded="false">Show 8 more publications</button>
+    {% if site.data.publications.size > 4 %}
+      <button class="collection-show-more" id="publication-show-more" type="button" aria-controls="publication-list" aria-expanded="false">Show all {{ site.data.publications | size }} publications</button>
     {% endif %}
   </div>
 </section>
@@ -35,27 +34,16 @@
 (function () {
   var button = document.getElementById('publication-show-more');
   if (!button) return;
-
-  var chunkSize = 8;
-  var visibleCount = chunkSize;
-  var items = document.querySelectorAll('[data-publication-index]');
-  var total = {{ site.data.publications | size }};
+  var extra = document.querySelectorAll('#publication-list .collection-item-hidden');
+  var expanded = false;
 
   button.addEventListener('click', function () {
-    visibleCount += chunkSize;
-    button.setAttribute('aria-expanded', 'true');
-    items.forEach(function (item) {
-      if (parseInt(item.dataset.publicationIndex, 10) <= visibleCount) {
-        item.classList.remove('collection-item-hidden');
-      }
+    expanded = !expanded;
+    extra.forEach(function (item) {
+      item.classList.toggle('collection-item-hidden', !expanded);
     });
-
-    var remaining = total - visibleCount;
-    if (remaining <= 0) {
-      button.hidden = true;
-    } else {
-      button.textContent = 'Show ' + Math.min(chunkSize, remaining) + ' more publications';
-    }
+    button.setAttribute('aria-expanded', String(expanded));
+    button.textContent = expanded ? 'Show fewer publications' : 'Show all {{ site.data.publications | size }} publications';
   });
 })();
 </script>
