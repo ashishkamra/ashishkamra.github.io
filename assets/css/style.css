@@ -50,7 +50,7 @@ button { font: inherit; }
 }
 .site-brand strong { display: block; font-size: 0.96rem; letter-spacing: -0.01em; }
 .site-brand small { display: block; margin-top: 0.25rem; color: var(--ink-soft); font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; }
-.site-nav { display: flex; align-items: center; gap: 1.7rem; }
+.site-nav { display: flex; align-items: center; gap: 1rem; }
 .site-nav a { border-bottom: 1px solid transparent; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
 .site-nav a:hover { border-color: var(--ink); }
 .site-nav .nav-linkedin { padding: 0.62rem 0.9rem; background: var(--blue); color: var(--white); border: 0; }
@@ -155,6 +155,7 @@ button { font: inherit; }
 
 /* Existing writing, talks, and publication collections */
 .section-header { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem; }
+.section-header .section-kicker { margin: 0; }
 .section-header h2 { font-family: Georgia, serif; font-size: clamp(2rem, 3vw, 3rem); font-weight: 400; letter-spacing: -0.04em; }
 .section-header .count { display: grid; width: 30px; height: 30px; place-items: center; border-radius: 50%; background: var(--lime); font-size: 0.68rem; font-weight: 800; }
 #blog, #publications { background: var(--paper); }

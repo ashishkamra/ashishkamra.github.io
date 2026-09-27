@@ -40,11 +40,11 @@ title: Ashish Kamra | AI & Cloud Engineering Leader
   </div>
 </section>
 
-{% include repositories.html %}
-{% include patents.html %}
 {% include resume.html %}
-{% include blog_posts.html %}
 {% include talks.html %}
+{% include patents.html %}
+{% include blog_posts.html %}
+{% include repositories.html %}
 {% include publications.html %}
 
 <section class="section connect-section" id="connect">
