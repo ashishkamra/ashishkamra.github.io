@@ -2,6 +2,11 @@
 # Fields: title, url, date (YYYY-MM-DD), authors, summary (optional)
 # Dates marked "# approx" are estimated — please verify.
 
+- title: "Red Hat delivers peak performance on Kubernetes and CPUs in MLPerf Inference v6.1"
+  url: https://www.redhat.com/en/blog/red-hat-delivers-peak-performance-kubernetes-cpus-mlperf-inference-v61
+  date: "2026-09-29"
+  authors: "Alberto Perdomo, Ashish Kamra, Diane Feddema, Michey Mehta, Michael Goin, Naveen Miriyalu, Nikhil Palaskar, Harika Pothina, Thameem Abbas Ibrahim Bathusha"
+  
 - title: "Red Hat and NVIDIA: Setting standards for high-performance AI inference"
   url: https://www.redhat.com/en/blog/red-hat-and-nvidia-setting-standards-high-performance-ai-inference
   date: "2026-04-02"
