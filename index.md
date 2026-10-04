@@ -54,7 +54,7 @@ title: Ashish Kamra | AI & Cloud Engineering Leader
     <p>Follow my work in AI performance, open source, and engineering leadership.</p>
     <div class="hero-actions">
       <a class="button button-light" href="https://www.linkedin.com/in/ashishkamra/" target="_blank" rel="noopener">LinkedIn profile <span aria-hidden="true">↗</span></a>
-      <a class="button button-outline" href="https://github.com/ashishkamra" target="_blank" rel="noopener">GitHub profile <span aria-hidden="true">↗</span></a>
+      <a class="button button-secondary" href="https://github.com/ashishkamra" target="_blank" rel="noopener">GitHub profile <span aria-hidden="true">↗</span></a>
     </div>
   </div>
 </section>
