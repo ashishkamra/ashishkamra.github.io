@@ -7,7 +7,7 @@ title: Ashish Kamra | AI & Cloud Engineering Leader
   <div class="container hero-grid">
     <div class="hero-copy">
       <p class="eyebrow">AI performance · Cloud platforms · Engineering leadership</p>
-      <h1>Building Enterprise AI platforms<br>that perform <em>at scale.</em></h1>
+      <h1>Building Enterprise AI platforms <br>that perform <em>at scale.</em></h1>
       <p class="hero-intro">I am Ashish Kamra, Senior Manager of AI Performance at Red Hat. I lead engineering teams working to make enterprise AI and cloud platforms faster, more scalable, and more useful in the real world.</p>
       <div class="hero-actions">
         <a class="button button-primary" href="#repositories">Explore my work</a>
