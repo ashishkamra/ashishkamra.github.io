@@ -1,9 +1,10 @@
 <section class="section" id="publications">
   <div class="container">
-    <div class="section-header">
-      <span class="section-kicker">07 /</span>
-      <h2>Publications</h2>
-      <span class="count">{{ site.data.publications | size }}</span>
+    <div class="section-title-row">
+      <div>
+        <p class="section-kicker">07 / Publications</p>
+        <h2>Selected papers</h2>
+      </div>
     </div>
     <div id="publication-list">
     {% assign pubs = site.data.publications | sort: "year" | reverse %}

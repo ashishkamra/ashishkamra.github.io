@@ -1,9 +1,10 @@
 <section class="section" id="blog">
   <div class="container">
-    <div class="section-header">
-      <span class="section-kicker">05 /</span>
-      <h2>Blogs</h2>
-      <span class="count">{{ site.data.blog_posts | size }}</span>
+    <div class="section-title-row">
+      <div>
+        <p class="section-kicker">05 / Blogs</p>
+        <h2>Selected posts</h2>
+      </div>
     </div>
     {% assign posts = site.data.blog_posts | sort: "date" | reverse %}
     {% assign current_year = "" %}
@@ -11,21 +12,22 @@
       {% assign year = post.date | date: "%Y" %}
       {% if year != current_year %}
         {% unless forloop.first %}</ul>{% endunless %}
-        <h3 class="blog-year" data-year-start="{{ forloop.index }}">{{ year }}</h3>
-        <ul class="blog-compact-list">
+        <h3 class="collection-year" data-year-start="{{ forloop.index }}">{{ year }}</h3>
+        <ul class="compact-collection">
         {% assign current_year = year %}
       {% endif %}
-      <li class="blog-compact-item" data-blog-index="{{ forloop.index }}">
-        <span class="blog-title-authors">
-          <a href="{{ post.url }}" target="_blank" rel="noopener">{{ post.title }}</a>{% if post.authors %}<span class="blog-authors"> | {{ post.authors }}</span>{% endif %}
-        </span>
-        <span class="blog-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <li class="compact-row" data-blog-index="{{ forloop.index }}">
+        <div>
+          <h3><a href="{{ post.url }}" target="_blank" rel="noopener">{{ post.title }} <span aria-hidden="true">↗</span></a></h3>
+          {% if post.authors %}<p>{{ post.authors }}</p>{% endif %}
+        </div>
+        <time class="compact-row-meta" datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time>
       </li>
       {% if forloop.last %}</ul>{% endif %}
     {% endfor %}
     {% assign total_posts = site.data.blog_posts | size %}
     {% if total_posts > 10 %}
-      <button class="blog-show-more-btn" id="blog-show-more">Show more</button>
+      <button class="collection-show-more" id="blog-show-more" type="button">Show more</button>
     {% endif %}
   </div>
 </section>

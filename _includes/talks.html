@@ -1,9 +1,10 @@
 <section class="section" id="talks">
   <div class="container">
-    <div class="section-header">
-      <span class="section-kicker">03 /</span>
-      <h2>Talks</h2>
-      <span class="count">{{ site.data.talks | size }}</span>
+    <div class="section-title-row">
+      <div>
+        <p class="section-kicker">03 / Talks</p>
+        <h2>Selected talks</h2>
+      </div>
     </div>
     <ul class="compact-collection">
       {% assign talks = site.data.talks | sort: "date" | reverse %}
